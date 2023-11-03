@@ -1,0 +1,276 @@
+/* comment */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #856a6d;
+    background-color: beige;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "winco", sans-serif;
+    font-size: 1em;
+    font-style: italic;
+}
+
+a{
+    color: #856a6d;
+    text-decoration: none;
+    font-family: "winco", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+a:hover{
+    color: #F9D669;
+}
+
+h2,p{
+    font-family: "winco", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* End of Reset */
+
+header{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 12px;
+    margin-left: 12px;
+    padding: 12px;
+}
+
+footer{
+    max-width: 1200px;
+    height: 30px;
+    margin-top: 20px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:beige;
+}
+
+.hero{
+    background-image: url(image/hamster_home.png);
+    background-size: 75%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 710px;
+    position: relative; /*this is need for h1*/
+}
+
+.hero h1:hover{
+    color:#F9D669;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    max-width: 300px;
+    margin: 30px 16px 16px 16px;
+    padding: 10px;
+}
+
+.card-img{
+    height: 250px;
+    text-align: center;
+}
+
+.card img{
+    width: 80%;
+}
+
+.card h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero h1{
+    font-family: "winco", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 4em;
+    text-align: center;
+    position: absolute; /*this centered h1*/
+    top: 25%; /*actually this places the h1 a little above center*/
+    left: 50%; /*this centers h1 horizontally*/
+    transform: translate(-50%, -50%);
+    color: #584547;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0px auto;
+    background-color: white;
+}
+
+.logo{
+    font-family: "winco", sans-serif;
+    font-style: italic;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.details{
+    width: 900px;
+    height: 700px;
+    margin: 0px auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details_text{
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.details h2{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.details p{
+    width: 450px;
+}
+
+.contact-image{
+    background-image: url(image/about.jpg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 800px;
+    height: 350px;
+    margin: 0px auto 0px auto;
+}
+
+.contact-h1{
+    font-family: "winco", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2em;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.about{
+    margin: 90px auto;
+}
+
+.thank-image{
+    background-image: url(image/thank.jpg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 800px;
+    height: 350px;
+    margin: 0px auto 0px auto;
+}
+
+.form{
+    width: 300px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+
+input, textarea{
+    font-size: 1em;
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+    padding: 3px;
+}
+
+.form p{
+    margin-top: 5px;
+}
+
+.box{
+    border: 0.5px solid #856a6d;
+    width: 250px;
+    height: 30px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    border-radius: 12px;
+}
+
+.button{
+    width: 150px;
+    margin: 0px auto 20px auto;
+    padding: 10px 0px;
+    background-color: beige;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 12px;
+}
+
+/*media queries*/
+
+/*
+@media only screen and (max-width: 700px) {
+    .hero h1{
+        font-size: 7em;
+    }
+    .hero{
+        background-size: 140%;
+        height: 400px;
+    }
+}
+
+/* font:
+font-family: "winco", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: "winco", sans-serif;
+font-weight: 400;
+font-style: italic;
+
+font-family: "winco", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+font-family: "winco", sans-serif;
+font-weight: 700;
+font-style: italic;
+
+font-family: "winco", sans-serif;
+font-weight: 800;
+font-style: normal;
+
+font-family: "winco", sans-serif;
+font-weight: 800;
+font-style: italic;
+
+font-family: "winco", sans-serif;
+font-weight: 900;
+font-style: normal;
+
+font-family: "winco", sans-serif;
+font-weight: 900;
+font-style: italic;
+*/
